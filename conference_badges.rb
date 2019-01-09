@@ -5,7 +5,7 @@ def badge_maker(attendee_name)
 end
 
 def batch_badge_creator(attendees_names)
-  names.map{ |attendee_name| badge_maker(attendee_name) }
+  attendees_names.map{ |attendee_name| badge_maker(attendee_name) }
 end
 
 def assign_rooms(speakers)
