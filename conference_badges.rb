@@ -5,7 +5,7 @@ def badge_maker(attendee_name)
 end
 
 def batch_badge_creator(attendees_names)
-  names.map{ |attendees_names| badge_maker(attendees_names) }
+  names.map{ |attendee_name| badge_maker(attendee_name) }
 end
 
 def assign_rooms(speakers)
@@ -17,7 +17,7 @@ def assign_rooms(speakers)
 end
 
 def printer(attendees)
-    attendee.each{
-      puts batch_badge_creator(attendees)
+    attendee.each{ |attendee|
+      puts batch_badge_creator(attendee)
     }
 end
