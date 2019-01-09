@@ -15,3 +15,10 @@ def assign_rooms(speakers)
   }
   rooms_list
 end
+
+def printer(attendee_name)
+    attendee_name.each{
+      puts batch_badge_creator(attendee_name)
+      puts assigns_rooms(attendee_name)
+    }
+end
